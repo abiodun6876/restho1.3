@@ -61,8 +61,8 @@ export default function Home() {
         />
       </div>
 
-      {/* Header start here */}
-      <Header />
+      {/* Header       <Header /> start here */}
+
 
       {loading ? null : (
         <div>
