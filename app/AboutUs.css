@@ -1,0 +1,99 @@
+/* Styles for the container holding the entire "About Us" content */
+.about-us-container {
+    background: url('https://tse4.mm.bing.net/th?id=OIP.Nt4RbfTQfrUPUvBDnzFZWgHaCn&pid=Api&P=0&h=220') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    padding: 20px;
+    font-family:'Cormorant Garamond,serif';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    border-bottom: 20px;
+  }
+  
+/* Styles for the header and sub-header */
+.about-header {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+    margin-bottom: 10px;
+    font-family:'Cormorant Garamond,serif';
+}
+
+.sub-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bf9444;
+    margin-bottom: 20px;
+    font-family:'Cormorant Garamond,serif';
+}
+
+/* Styles for the content columns */
+.about-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-column {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the banner image */
+.banner-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for the icons and their descriptions */
+.about-us-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-icon {
+    width: 100%;
+    text-align: center;
+}
+
+/* Styles for the square food images in rows */
+.about-us-image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+/* Styles for the "Discover More" link */
+.discover-more {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .about-column {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .about-us-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-icon {
+        width: auto;
+        margin: 10px 0;
+    }
+}

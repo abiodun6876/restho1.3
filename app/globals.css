@@ -1,0 +1,361 @@
+/* globals.css */
+
+/* tailwind css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+/* Define custom CSS variables */
+:root {
+  --bg-dark: #212529;
+  --font-size: 100px;
+}
+
+/* Body styling */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+ overflow:hidden;
+
+}
+
+/* Loading container */
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+/* Loading text */
+.loading-text {
+  font-size: var(--font-size);
+  color: white; /* Change text color as needed */
+  position: absolute; /* Position loading text over the logo */
+  font-weight: bold;
+  z-index: 1; /* Ensure the loading text appears above the logo */
+}
+
+/* Loading logo */
+.loading-logo {
+  width: 200px; /* Set the dimensions you need */
+  height: 100px;
+  /* Add any additional styles for the logo */
+}
+
+/* Hide loading container when not needed */
+.loading-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Header */
+.header {
+  position: fixed; /* Change to fixed to keep the header visible */
+  top: 0; /* Initially, place the header at the top of the viewport */
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  z-index: 2;
+  transition: top 0.3s ease-in-out; /* Add a transition for smooth scrolling */
+}
+
+/* Add a class to hide the header when scrolled up */
+.header.hidden {
+  top: -100%; /* Move the header above the viewport when hidden */
+}
+
+
+/* Make header left-content text white */
+.left-content {
+  color: white;
+}
+
+/*right-content */
+.right-content {
+  color: white;
+}
+
+
+/* right-content p:hover */
+.right-content p:hover {
+  color: #bf9444;
+}
+
+
+
+/* right-content p:hover */
+.icone p:hover {
+  color: #f7f6f5;
+}
+
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+
+/* Display header when needed */
+.header.visible {
+  top: 0; /* Move the header into view */
+}
+
+/* Hide mobile-menu-icon on desktop screens */
+@media (min-width: 769px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+}
+
+
+/* Media query for hiding elements on mobile screens */
+@media screen and (max-width: 400px){
+  .hide {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-toggle{
+  display: none;
+  
+  }}
+
+
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+
+  /* Hide the toggle button on mobile */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* CSS transitions for sliding sidebar */
+.navbar.sidebar-open .menu {
+  transform: translateX(250px); /* Adjust the width as needed */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* right-content p:hover */
+.FindReservation p:hover {
+  color: #f7f6f5;
+}
+
+
+
+/* Find Reservation Button */
+.FindReservation {
+  background-color: #bf9444;
+  border-radius: 40px;
+  color: white;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+ 
+  
+ 
+
+}
+
+/* Add a hover effect to the "Find Reservation" button */
+.FindReservation a:hover {
+  background-color: #333; /* Dark background color on hover */
+  color: #fff; /* White text color on hover */
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+
+
+/* Blog container */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: -70px;
+}
+
+/* Blog card styles */
+.blog-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1; /* Equal-width columns, grows to fill the available space */
+  margin-bottom: 20px; /* Add margin for spacing between cards */
+}
+
+/* Blog card header */
+.blog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond,serif';
+  font-size: 20px; /* Adjust the font size */
+}
+
+/* Subtitle and date */
+.subtitle {
+  color: #bf9444;
+  font-weight: bold;
+}
+
+/* Blog image container */
+.blog-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Blog image */
+.blog-image img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: -30px; /* Adjust the value to shift the image up */
+}
+
+/* Read more button */
+.read-more {
+  background-color: #ffffff;
+  color: #bf9444;
+  border: 2px solid #bf9444;
+  border-radius: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s; /* Adjust the transition property */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .blog-container {
+    flex-direction: column; /* Stack cards on top of each other */
+  }
+
+  .blog-card {
+    width: 100%; /* Cards take full width on smaller screens */
+  }
+}
+
+
+
+
+/* Dropdown container */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fdfafa; /* Background color for the dropdown */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+  border-radius: 8px; /* Rounded corners for the dropdown */
+}
+
+/* Style for individual dropdown items */
+.dropdown-content a {
+  color:#131211; /* Text color for dropdown items */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Change background color on hover for dropdown items */
+.dropdown-content a:hover {
+  background-color:#bf9444;; /* Background color on hover */
+}
+
+/* Show the dropdown when hovering over its parent */
+.nav-menu li:hover .dropdown-content {
+  display: block;
+  opacity: 1; /* Fade in the dropdown */
+}
+
+/* Rest of your existing CSS */
+/* ... */
+
+.triangle-container {
+  display: flex;
+  
+}
+
+.triangle {
+  width: 200px;
+  height: 200px;
+  background-color: #bf9444;
+  transform: rotate(45deg);
+  margin: 10px;
+  overflow: hidden;
+}
+
+.triangle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  margin-left: 20px;
+}
+
+h4 {
+  color: #bf9444;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.discover-button {
+  background-color: #bf9444;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}

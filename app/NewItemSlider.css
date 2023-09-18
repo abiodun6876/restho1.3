@@ -1,0 +1,162 @@
+/* Styles for the container holding the entire "New Item Slider" content */
+.new-item-slider {
+    background: url('https://img.freepik.com/free-photo/elevated-view-fresh-vegetables-black-backdrop_23-2147917347.jpg?size=626&ext=jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    padding: 20px;
+    font-family: 'Cormorant Garamond,serif';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    border-bottom: 20px;
+  }
+  
+  /* Styles for the header and sub-header */
+  .itemheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Added transition */
+  }
+  
+  .description {
+    font-size: 28px;
+    font-weight: bold;
+    color: #bf9444;
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Added transition */
+  }
+  
+  /* Styles for the slider content */
+  .slider-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px; /* Gap between cards */
+  }
+  
+  /* Styles for the slider items */
+  .slider-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Added transition */
+    opacity: 0.7; /* Initial opacity */
+  }
+  
+  .slider-item.active {
+    transform: scale(1); /* Scale to 100% on active item */
+    opacity: 1; /* Full opacity on active item */
+  }
+  
+  /* Styles for the item image */
+  .item-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Styles for the item details */
+  .item-details {
+    text-align: center;
+  }
+  
+  .item-details h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .item-details p {
+    font-size: 18px;
+    color: #bf9444;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    background-color: #212529;
+    color: #bf9444;
+    border: 2px solid #bf9444;
+    border-radius: 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-Weight: bold;
+    margin-top: 10px;
+    transition:color 0.3s; 
+  }
+  
+  /* Styles for the arrow buttons */
+  .arrow-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .left-arrow,
+  .right-arrow {
+    font-size: 26px;
+    font-weight: bold;
+    color: #bf9444;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid #bf9444;
+    border-radius: 50%;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .left-arrow:hover,
+  .right-arrow:hover {
+    color: white;
+    background-color: #bf9444;
+  }
+  
+
+  
+  
+  /* Styles for smaller screens (e.g., tablets) */
+  @media (max-width: 768px) {
+    .new-item-slider {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .title {
+      font-size: 36px; /* Adjust font size for smaller screens */
+    }
+  
+    .description {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    /* Adjust other styles as needed for smaller screens */
+  }
+  
+  /* Styles for even smaller screens (e.g., mobile devices) */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 24px; /* Further reduce font size for mobile devices */
+    }
+  
+    .description {
+      font-size: 14px; /* Further reduce font size for mobile devices */
+    }
+  
+    /* Adjust other styles as needed for mobile devices */
+  }
+  
