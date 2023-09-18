@@ -198,7 +198,7 @@ color: #FFE600;
 
   .nav-menu {
   
-      position: absolute;
+      position:fixed;
       top: 90px;
       right: -200%;
       width: 100%;
