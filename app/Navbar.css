@@ -197,19 +197,22 @@ color: #FFE600;
   }
 
   .nav-menu {
-    position: fixed;
-    top: 90px;
-    right: -200%;
-    width: 100%;
-    height: 100vh;
-    background: rgb(250, 248, 248);
-    border-left: px solid #0f0d0d;
-    z-index: 2;
-    transition: left 0.4s; /* Use transition on 'right' for smoother animation */
-    display: flex;
-    flex-direction: column;
-    flex: start;
-  }
+  
+      position: absolute;
+      top: 90px;
+      right: -200%;
+      width: 100%;
+      height: 100vh;
+      background: rgb(250, 248, 248);
+      border-left: px solid #0f0d0d;
+      z-index: 2;
+      transition: left 0.4s; /* Use transition on 'right' for smoother animation */
+      display: flex;
+      flex-direction: column;
+      flex: start;
+    } 
+   
+  
   
 
   .nav-menu.active {
