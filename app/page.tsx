@@ -53,7 +53,7 @@ export default function Home() {
       <div className={`loading-container ${loading ? 'visible' : 'hidden'}`}>
         <div className="loading-text">{loading ? `${progress}%` : ''}</div>
         <Image
-          src="/assets/images/header2-logo.svg"
+          src="https://restho-nextjs.vercel.app/assets/images/header2-logo.svg"
           alt="Loading Logo"
           className="loading-logo"
           width={200} // Set the desired width
