@@ -1,0 +1,176 @@
+# Next.js Restho Website Documentation
+
+## Table of Contents
+1. **Introduction**
+   - Project Overview
+   - Purpose and Goals
+   - Contributors
+
+2. **Getting Started**
+   - Prerequisites
+   - Installation
+   - Configuration
+   - Folder Structure
+
+3. **Usage**
+   - Accessing the Website
+   - User Features
+   - Admin Features (if applicable)
+   
+4. **Design and Architecture**
+   - Design Decisions
+   - Component Hierarchy
+   - Routing Structure
+
+5. **Data Models**
+   - Describe your data models (e.g., for menu items, reservations, etc.)
+   - Database Schema (if applicable)
+   
+6. **Frontend Development**
+   - React Components
+   - Styling with CSS/SCSS
+   - State Management (if used)
+   - Third-party Libraries (if used)
+   
+7. **Backend Development**
+   - API Routes (if any)
+   - Server-side Rendering (if used)
+   - Authentication and Authorization (if applicable)
+
+8. **Testing**
+   - Unit Testing
+   - Integration Testing
+   - End-to-End Testing
+   - Test Frameworks and Tools
+   
+9. **Deployment**
+   - Hosting Platform
+   - Deployment Process
+   - Environment Variables
+   
+10. **Maintenance and Updates**
+    - Version Control (Git)
+    - Continuous Integration/Continuous Deployment (CI/CD)
+    - Monitoring and Error Tracking (if used)
+   
+11. **Security**
+    - Authentication and Authorization
+    - Data Encryption
+    - Security Best Practices
+   
+12. **Troubleshooting**
+    - Common Issues and Solutions
+    - Debugging Techniques
+
+13. **Scalability**
+    - Preparing for Scalability
+    - Scaling Strategies
+   
+14. **Documentation**
+    - Code Documentation
+    - API Documentation (if applicable)
+    - User Documentation (if needed)
+   
+15. **License**
+    - Project Licensing Information
+
+16. **Acknowledgments**
+    - Thanking Contributors and Third-party Libraries
+   
+17. **Changelog**
+    - Version History and Updates
+   
+18. **Support and Contact**
+    - Contact Information
+    - Community or Support Channels
+
+19. **Conclusion**
+    - Summary
+    - Future Roadmap (if any)
+
+---
+
+## 1. Introduction
+
+### Project Overview
+Provide a brief overview of the Next.js Restho website, including its purpose, key features, and target audience.
+
+### Purpose and Goals
+Explain why the project was undertaken and list specific goals and objectives.
+
+### Contributors
+List the names and roles of project contributors, including developers, designers, and testers.
+
+## 2. Getting Started
+
+### Prerequisites
+Specify the software, tools, and dependencies required to set up and run the website locally.
+
+### Installation
+Provide detailed instructions on how to install and configure the development environment and the project itself.
+
+### Configuration
+Explain any necessary configuration steps, including environment variables and settings.
+
+### Folder Structure
+Describe the organization of project files and directories.
+
+## 3. Usage
+
+### Accessing the Website
+Explain how users can access the website, whether it's a live URL or a local development server.
+
+### User Features
+Detail the features available to website users, such as browsing the menu, making reservations, etc.
+
+### Admin Features (if applicable)
+If there are admin features, describe them and how administrators can access and use them.
+
+## 4. Design and Architecture
+
+### Design Decisions
+Discuss key design decisions related to UI/UX, branding, and layout.
+
+### Component Hierarchy
+Provide a visual representation of the component hierarchy if applicable.
+
+### Routing Structure
+Explain how routing is structured, including any nested routes.
+
+## 5. Data Models
+
+### Describe your data models, including their attributes and relationships.
+### Include any relevant database schema (if using a database).
+
+## 6. Frontend Development
+
+### React Components
+List and describe important React components used in the project.
+
+### Styling with CSS/SCSS
+Explain the styling approach and provide an overview of CSS/SCSS files and practices used.
+
+### State Management (if used)
+Discuss how state is managed, including the use of React Context, Redux, or other state management tools.
+
+### Third-party Libraries (if used)
+List and briefly describe any third-party libraries or packages integrated into the project.
+
+## 7. Backend Development
+
+### API Routes (if any)
+Explain any API routes and their purposes.
+
+### Server-side Rendering (if used)
+Describe how server-side rendering is implemented, if applicable.
+
+### Authentication and Authorization (if applicable)
+Explain how user authentication and authorization are handled.
+
+## 8. Testing
+
+### Unit Testing
+Describe unit testing practices, tools, and frameworks used.
+
+### Integration Testing
+Explain how
