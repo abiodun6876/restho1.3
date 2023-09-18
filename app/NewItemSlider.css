@@ -40,6 +40,7 @@
   /* Styles for the slider content */
   .slider-content {
     display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to the next row on smaller screens */
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -58,11 +59,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s; /* Added transition */
     opacity: 0.7; /* Initial opacity */
-  }
-  
-  .slider-item.active {
-    transform: scale(1); /* Scale to 100% on active item */
-    opacity: 1; /* Full opacity on active item */
+    width: calc(33.33% - 40px); /* Adjust the width for smaller screens */
+    margin: 20px; /* Adjust margin for smaller screens */
   }
   
   /* Styles for the item image */
@@ -95,9 +93,9 @@
     border-radius: 20px;
     padding: 8px 16px;
     text-decoration: none;
-    font-Weight: bold;
+    font-weight: bold;
     margin-top: 10px;
-    transition:color 0.3s; 
+    transition: color 0.3s;
   }
   
   /* Styles for the arrow buttons */
@@ -126,9 +124,6 @@
     color: white;
     background-color: #bf9444;
   }
-  
-
-  
   
   /* Styles for smaller screens (e.g., tablets) */
   @media (max-width: 768px) {
